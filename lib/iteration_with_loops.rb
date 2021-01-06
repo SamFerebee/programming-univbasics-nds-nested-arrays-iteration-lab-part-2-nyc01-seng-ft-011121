@@ -5,9 +5,9 @@ def find_min_in_nested_arrays(src)
   outer = 0 
   while outer < src.size do 
     inner = 0 
-    smallest_num = 0
+    smallest_num = nil
     while inner < src[outer].size do
-      if src[outer][inner] > smallest_num
+      if src[outer][inner] < smallest_num
         smallest_num = src[outer][inner]
       end
       inner += 1
