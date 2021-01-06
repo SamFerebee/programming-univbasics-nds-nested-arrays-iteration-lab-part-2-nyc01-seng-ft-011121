@@ -9,10 +9,10 @@ def find_min_in_nested_arrays(src)
     while inner < src[outer].size do
       if src[outer][inner] < smallest_num
         smallest_num = src[outer][inner]
-        smallest_arr.push(smallest_num)
       end
       inner += 1
     end
+    smallest_arr.push(smallest_num)
     outer += 1 
   end
     smallest_arr
