@@ -5,7 +5,7 @@ def find_min_in_nested_arrays(src)
   outer = 0 
   while outer < src.size do 
     inner = 0 
-    smallest_num = nil
+    smallest_num = 10000
     while inner < src[outer].size do
       if src[outer][inner] < smallest_num
         smallest_num = src[outer][inner]
